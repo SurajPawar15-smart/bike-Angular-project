@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-header bg-info text-white">
+        <h4 class="card-title">Royal enfield Popular Bikes</h4>
+    </div>
+    <div class="card-body">
+        <div class="card-columns">
+            <div class="card  mb-3" style="max-width:18rem" *ngFor="let bike of bikeList">
+                <div style="min-height:220px">
+                    <img class="card-img-top" [src]="bike.ImagePath">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{bike.Name}}</h4>
+                    <small class="badge">{{bike.Price}}</small>
+                    <small class="badge bg-info text-white">{{bike.Mileage}}</small>
+                    <div class="">
+                        <a href="#" class="card-link">Specification</a>
+                        <a href="#" class="card-link">Showroom</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted">Model: {{bike.Model}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
